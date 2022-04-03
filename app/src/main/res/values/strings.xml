@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Assignment2_201928011</string>
+    <string name="pass">Pass</string>
+    <string name="initialTime">10:00</string>
+    <string name="start">Start</string>
+    <string name="how_many_minutes">How many minutes is timer</string>
+    <string name="reset">Reset</string>
+</resources>

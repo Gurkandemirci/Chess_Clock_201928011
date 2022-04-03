@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutt"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <Button
+        android:id="@+id/pass_button_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        android:rotation="180"
+        android:text="@string/pass"
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/countdown_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pass_button_black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:rotation="180"
+        android:text="@string/initialTime"
+        android:textColor="@android:color/black"
+        android:textSize="80sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button_start_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/countdown_black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/start"
+        android:textColor="@color/white" />
+
+
+    <EditText
+        android:id="@+id/input_minute_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_start_pause"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/how_many_minutes"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+         />
+
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_start_pause"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/black"
+        android:text="@string/reset"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/countdown_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_reset"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/initialTime"
+        android:textColor="@color/black"
+        android:textSize="80sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/pass_button_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/countdown_white"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/black"
+        android:text="@string/pass"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        />
+
+
+
+</RelativeLayout>
